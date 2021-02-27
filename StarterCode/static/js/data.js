@@ -983,6 +983,7 @@ var data = [{
     datetime: "1/13/2010",
     city: "ackerman",
     state: "ms",
+
     country: "us",
     shape: "light",
     durationMinutes: "2 hours",
@@ -997,4 +998,6 @@ var data = [{
     durationMinutes: "4 minutes",
     comments: "Bright orange object&#44 rapid speed and direction changes .."
   }
+
 ];
+
