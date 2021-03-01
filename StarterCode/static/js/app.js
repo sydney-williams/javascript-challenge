@@ -30,7 +30,7 @@
 //look up how to populate HTML table from JS array 
 //forming array to display sighting data
 //stack help 
-function addDataToTbody(nl, objectData) { // nl representing NodeList and objectData representing array with objects
+function displayData(nl, objectData) { // nl representing NodeList and objectData representing array with objects
     objectData.forEach((d, i) => {
       var tr = nl.insertRow(i);
       Object.keys(d).forEach((k, j) => { // representing the th.innerHTML
@@ -42,4 +42,16 @@ function addDataToTbody(nl, objectData) { // nl representing NodeList and object
   }
   
   var ufoTable = document.querySelector("#ufo-table tbody");
-  addDataToTbody(ufoTable, data); //displaying the data to the HTML table
+  displayData(ufoTable, data); //displaying the data to the HTML table
+
+
+//set up for filtering 
+var tableData = data;
+var tbody = d3.select("tbody");
+
+//create a fitlter button
+var button = d3.select("filter-btn");
+//attach an event listener 
+d3.select("filter-btn").on("click", function(filterByDate){
+//do something when the button is clicked below:
+});
