@@ -54,4 +54,18 @@ var button = d3.select("filter-btn");
 //attach an event listener 
 d3.select("filter-btn").on("click", function(filterByDate){
 //do something when the button is clicked below:
+//prevent the page from refreshing
+d3.event.preventDefault();
+//select the input element and get the raw HTML node
+var inputElement = d3.select("#datetime");
+//get the value property of the input element
+var inputValue = inputElement.property("value");
+//define your table
+table = document.getElementById("ufo-table");
+//gather tag name
+tr = table.getElementByTagName("tr");
+
+//display data through filter search button
+
+
 });
