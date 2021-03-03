@@ -52,8 +52,9 @@ var tbody = d3.select("tbody");
 //create a fitlter button
 var button = d3.select("filter-btn");
 //attach an event listener 
-d3.select("filter-btn").on("click", function(filterByDate){
-//do something when the button is clicked below:
+d3.select("filter-btn").on("click", function(){
+console.log("my button function is working");
+  //do something when the button is clicked below:
 //prevent the page from refreshing
 d3.event.preventDefault();
 //select the input element and get the raw HTML node
